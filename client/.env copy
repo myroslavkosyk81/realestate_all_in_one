@@ -1,0 +1,3 @@
+VITE_FIREBASE_API_KEY = "AIzaSyA-_mUzcDBohCnl2FCqEufidh89Qfb5MXY"
+# VITE_APP_API_URL = "http://localhost:3000"
+VITE_APP_API_URL = "https://real-estate-back-vercel.vercel.app"

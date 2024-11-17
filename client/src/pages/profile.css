@@ -1,0 +1,23 @@
+.field input:focus {
+    outline: none;
+}
+.field label {
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    bottom: 50px;
+    cursor: text;
+    display: flex;
+    color: #999;
+    font-size: 16px;
+}
+.field span {
+    transition: transform 0.25s ease-in-out;
+    transition-delay: calc(var(--i) * .07s);
+}
+.field input:focus~label span,
+
+.field input:not(:placeholder-shown)~label span {
+    font-size: 16px;
+    transform: translateY(-33px);
+}
