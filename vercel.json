@@ -8,7 +8,7 @@
        "use": "@vercel/node"
      },
      {
-       "src": "/client/**",
+       "src": "client/**",
        "use": "@vercel/static"
      }
    ],
@@ -19,7 +19,7 @@
      },
      {
        "src": "/(.+\\.[a-z]+)$",
-       "dest": "/client/$1"
+       "dest": "/client/dist"
      }
    ]
  }
