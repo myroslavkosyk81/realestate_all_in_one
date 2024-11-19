@@ -12,8 +12,19 @@
        "use": "@vercel/static"
      }
    ],
-   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+   "routes": [
+     {
+       "src": "/((?!.*\\.\\w+$).*)",
+       "dest": "/api/index.js"
+     },
+     {
+       "src": "/(.+\\.[a-z]+)$",
+       "dest": "/client/$1"
+     }
+   ],
+   "rewrites": [
+    { "source": "/client/(.*)",
+     "destination": "/client/index.html"}
+    ]
  }
-
- 
  
