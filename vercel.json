@@ -19,7 +19,7 @@
      },
      {
        "src": "/(.+\\.[a-z]+)$",
-       "dest": "/client/index.html"
+       "dest": "/client/$1"
      }
    ],
    "rewrites": [
