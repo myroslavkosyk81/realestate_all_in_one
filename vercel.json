@@ -21,9 +21,5 @@
        "src": "/(.+\\.[a-z]+)$",
        "dest": "/client/$1"
      }
-   ],
-   "rewrites": [
-    { "source": "/client/(.*)",
-     "destination": "/client/index.html"}
-    ]
+   ]
  }
