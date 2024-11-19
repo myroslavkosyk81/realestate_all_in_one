@@ -22,7 +22,7 @@
        "dest": "/client/$1"
      }
    ],
-   {
+   
     "rewrites": [{ "source": "/(.*)", "destination": "/client/index.html"}]
- }
+ 
  }
