@@ -22,5 +22,5 @@
        "dest": "/client/$1"
      }
    ],
-   "rewrites": [{ "source": "/(.*)", "destination": "/index.html"}]
+   "rewrites": [{ "source": "/client/(.*)", "destination": "/client/index.html"}]
  }
