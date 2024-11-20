@@ -13,6 +13,10 @@
     }
   ],
   "routes": [
+    {
+      "src": "/((?!.*\\.\\w+$).*)",
+      "dest": "/api/index.js"
+    },
     
     { "src": "/client/(.*)", "dest": "/client/index.html"}
   ]
