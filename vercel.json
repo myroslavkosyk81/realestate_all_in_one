@@ -1,26 +1,28 @@
 {
-  "name": "express-static-website",
-  "version": 2,
-  "public": true,
-  "builds": [
-    {
-      "src": "/api/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "/client/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/((?!.*\\.\\w+$).*)",
-      "dest": "/api/index.js"
-    },
-    
-    { "src": "/client/(.*)", "dest": "/client/index.html"}
-  ]
-
+   "name": "express-static-website",
+   "version": 2,
+   "public": true,
+   "builds": [
+     {
+       "src": "/api/index.js",
+       "use": "@vercel/node"
+     },
+     {
+       "src": "client/**",
+       "use": "@vercel/static"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/((?!.*\\.\\w+$).*)",
+       "dest": "/api/index.js"
+     },
+     {
+       "src": "/(.+\\.[a-z]+)$",
+       "dest": "/client/$1"
+     }
+   ],
    
-
-}
+    "rewrites": [{ "source": "/(.*)", "destination": "/client/index.html"}]
+ 
+ }
