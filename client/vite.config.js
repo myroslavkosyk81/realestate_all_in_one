@@ -11,8 +11,8 @@ export default defineConfig({
     proxy: {
       // '/foo': 'http://localhost:5173',
       '/api': {
-        // target: 'http://localhost:3000',
-        target: `${process.env.VITE_APP_API_URL}`,
+        target: 'http://localhost:3000',
+        // target: `${process.env.VITE_APP_API_URL}`,
         changeOrigin: true,
         secure: false,      
         ws: true,
