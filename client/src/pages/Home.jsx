@@ -48,6 +48,7 @@ export default function Home() {
             'Expires': '0',
           },
         });
+        //new
         // const res = await fetch('/api/listing/get?offer=true&limit=4', {
         //   method: 'GET',
         //   headers: {
