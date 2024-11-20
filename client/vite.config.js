@@ -11,7 +11,7 @@ export default defineConfig({
     proxy: {
       // '/foo': 'http://localhost:5173',
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://realestate-all-in-one.vercel.app',
         // target: `${process.env.VITE_APP_API_URL}`,
         changeOrigin: true,
         secure: false,      
