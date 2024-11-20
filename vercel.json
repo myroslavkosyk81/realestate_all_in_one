@@ -21,7 +21,7 @@
       "src": "/(.+\\.[a-z]+)$",
       "dest": "/client/$1"
     },
-    { "source": "/(.*)", "destination": "/client/index.html"}
+    { "src": "/(.*)", "dest": "/client/index.html"}
   ]
 
    
