@@ -5,7 +5,7 @@ import Listing from '../models/listing.model.js';
 
 export const test = (req, res) => {
     res.json({
-        message: 'API roure is working'})
+        message: 'API roure is working!!!'})
 }
 
 export const updateUser = async (req, res, next) => {
