@@ -37,7 +37,7 @@ export default function Home() {
     // console.log(accessToken);
     const fetchOfferListings = async () =>{
       try {
-        const res = await fetch(`https://realestate-all-in-one.vercel.app/api/listing/get?offer=true&limit=4`, {
+        const res = await fetch('/api/listing/get?offer=true&limit=4', {
           method: 'GET',
           credentials: 'include',
           headers: {
@@ -48,7 +48,6 @@ export default function Home() {
             'Expires': '0',
           },
         });
-        //new
         // const res = await fetch('/api/listing/get?offer=true&limit=4', {
         //   method: 'GET',
         //   headers: {
@@ -71,7 +70,7 @@ export default function Home() {
 
     const fetchRentListings = async () => {
       try {
-        const res = await fetch(`https://realestate-all-in-one.vercel.app/api/listing/get?type=rent&limit=4`, {
+        const res = await fetch('/api/listing/get?type=rent&limit=4', {
           method: 'GET',
           credentials: 'include',
           headers: {
@@ -102,7 +101,7 @@ export default function Home() {
 
     const fetchSaleListings = async () => {
       try {
-        const res = await fetch(`https://realestate-all-in-one.vercel.app/api/listing/get?type=sale&limit=4`, {
+        const res = await fetch('/api/listing/get?type=sale&limit=4', {
           method: 'GET',
           credentials: 'include',
           headers: {
@@ -164,6 +163,8 @@ export default function Home() {
         ))
       }
       </Swiper>
+      
+     
 
       {/* listing resuits */}
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
